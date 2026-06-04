@@ -5,6 +5,7 @@
 Also distrupted a malicious attacker/vibe hacker 
 Possible Inflection point for cybersec
 
+
 ### Feb 5, 2026 
 - Zero Day Vulnerability (an undisclosed security flaw in software, hardware, or firmware that is unknown to the vendor or developers. Because the creators are unaware of the flaw, they have had "zero days" to create a patch or defense, giving attackers a critical window to exploit it.)
 
@@ -24,4 +25,18 @@ OpenSC - nothing from fuzzing, and manual analysis.
 - was able to reason about which code fragments were interesting and focus its effort there, instead of indiscriminately studying all lines with equal effort.
 
 ### Mar 6, 2026 
-- 
+- The way claude "exploits" is by giving it a vm and a task verifier, and asking it to make an exploit. then the poc was reverse engineered, to verify result 
+- Firefox CVE-2026-2796 
+    - gave access to vulnerabilites to claude that was submitted to mozilla and was asked to find exploits
+    - exploit a stripped-down version of the js shell (a standalone utility that lets developers use Firefox’s JavaScript engine without the browser) that resembles an unsandboxed content process in the browser, and a task verifier to determine whether the exploit worked. 
+    - A separate "verifier" system was set up with a secret file and a target location 
+    - claude had to read the file - showing that it broke out of the sandbox 
+    - and write than content to another location, proving that it had write access
+
+
+
+## URL's referred to 
+[Blog #1 - AI for CyberSec](https://red.anthropic.com/2025/ai-for-cyber-defenders/)
+[Blog #2 - Zero Days](https://red.anthropic.com/2026/zero-days/)
+[Blog #3 - Reverse Engineering CVE-2026-2796](https://red.anthropic.com/2026/exploit/)
+
