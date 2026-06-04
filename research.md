@@ -36,6 +36,10 @@ Possible Inflection point for cybersec
 
 ## Claude Mythos Preview - a Preview on Project Glasswing 
 
+- wrote a complex JIT heap spray that escpaed both rendered and OS sandboxes 
+- it obtained local privilige escalation exploits on LInux and other OSs by exploiting subtle race conditions and KASLR-bypasses (Kernel Address Space Layout Randomization (KASLR) is a crucial security defense that randomizes the memory locations of core kernel code and data structures at boot time. )
+- And it autonomously wrote a remote code execution exploit on FreeBSD’s NFS server that granted full root access to unauthenticated users by splitting a 20-gadget ROP chain over multiple packets.(look into this, need to understand)
+
 
 ## URL's referred to 
 - [Blog #1 - AI for CyberSec](https://red.anthropic.com/2025/ai-for-cyber-defenders/)
