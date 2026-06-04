@@ -9,20 +9,20 @@ Possible Inflection point for cybersec
 ### Feb 5, 2026 
 - Zero Day Vulnerability (an undisclosed security flaw in software, hardware, or firmware that is unknown to the vendor or developers. Because the creators are unaware of the flaw, they have had "zero days" to create a patch or defense, giving attackers a critical window to exploit it.)
 
-Claude was provided all the tools like fuzzers, and started utils 
+- Claude was provided all the tools like fuzzers, and started utils 
 
-(fuzzers - an automated testing technique that discovers bugs, crashes, and security vulnerabilities by feeding random, malformed, or invalid inputs into your software - forces edge cases that would usual be missed)
+``` (fuzzers - an automated testing technique that discovers bugs, crashes, and security vulnerabilities by feeding random, malformed, or invalid inputs into your software - forces edge cases that would usual be missed) ```
 
-GhostScript - no results from fuzzing and manual analysis. 
-- eventually, ended up looking at Git commit history - found a security related commit 
-- found a function that had checks added, then tested where this function was called (before the commit was made) to check for similar vulnerabilities that were *left* unpatched. 
-- found a line, and made a POC file that passed it to the code, and proved it to be correct 
+- GhostScript - no results from fuzzing and manual analysis. 
+    - eventually, ended up looking at Git commit history - found a security related commit 
+    - found a function that had checks added, then tested where this function was called (before the commit was made) to check for similar vulnerabilities that were *left* unpatched. 
+    - found a line, and made a POC file that passed it to the code, and proved it to be correct 
 
-OpenSC - nothing from fuzzing, and manual analysis. 
-- started to search the repository for function class that are  frequently vulnerable - like consecutive calls of strcat 
-- realized chance of output buffer overflow 
-- fuzzers not as useful in this case due to the many number of preconditions 
-- was able to reason about which code fragments were interesting and focus its effort there, instead of indiscriminately studying all lines with equal effort.
+- OpenSC - nothing from fuzzing, and manual analysis. 
+    - started to search the repository for function class that are  frequently vulnerable - like consecutive calls of strcat 
+    - realized chance of output buffer overflow 
+    - fuzzers not as useful in this case due to the many number of preconditions 
+    - was able to reason about which code fragments were interesting and focus its effort there, instead of indiscriminately studying all lines with equal effort.
 
 ### Mar 6, 2026 
 - The way claude "exploits" is by giving it a vm and a task verifier, and asking it to make an exploit. then the poc was reverse engineered, to verify result 
@@ -34,9 +34,13 @@ OpenSC - nothing from fuzzing, and manual analysis.
     - and write than content to another location, proving that it had write access
 
 
+## Claude Mythos Preview - a Preview on Project Glasswing 
+
 
 ## URL's referred to 
-[Blog #1 - AI for CyberSec](https://red.anthropic.com/2025/ai-for-cyber-defenders/)
-[Blog #2 - Zero Days](https://red.anthropic.com/2026/zero-days/)
-[Blog #3 - Reverse Engineering CVE-2026-2796](https://red.anthropic.com/2026/exploit/)
+- [Blog #1 - AI for CyberSec](https://red.anthropic.com/2025/ai-for-cyber-defenders/)
+- [Blog #2 - Zero Days](https://red.anthropic.com/2026/zero-days/)
+- [Blog #3 - Reverse Engineering CVE-2026-2796](https://red.anthropic.com/2026/exploit/)
+- [Blog #4 - Mythos Preview](https://red.anthropic.com/2026/mythos-preview/)
+
 
