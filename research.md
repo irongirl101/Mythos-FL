@@ -78,14 +78,32 @@ Exploits for N day Vulnerabililies:
 - then asked to filter the most exploitable vulnerabilities and then asked to do a priviliege escalation 
 - go through the vulnerability analysis check blog #4 
 
-    
+
 Meanwhile, whats so funny is that there was a vulnerability in Claude's code, which would allow a hacker to get access to github cicd workflow secrets - which was found by microsoft 
 
+
+### Vulnerability disclosure dashboard - check Policy #1 
+
+### May 22, 2026 
+- The problem anthropic faced at the time they released Mythos Preview was that no existing public exploit benchmarks were difficult enough to capture Mythos Preview’s capabilities in our initial testing.
+- But they started to use ExploitGym and ExploitBench 
+
+Capability Tiers: 
+- T5 Coverage (reaching the vulnerable code path);
+- T4 Reproduction (constructing a proof-of-concept to trigger the bug);
+- T3 Target primitives (creating primitives confined to the V8 sandbox);
+- T2 Generic primitives (breaking the sandbox to get read/write or infoleaks across the process);
+- T1 Full Control (hijacking control flow or getting arbitrary code execution).
+
+[Scone Bench](https://github.com/anthropics/scone-bench)
 
 ## URL's referred to 
 - [Blog #1 - AI for CyberSec](https://red.anthropic.com/2025/ai-for-cyber-defenders/)
 - [Blog #2 - Zero Days](https://red.anthropic.com/2026/zero-days/)
 - [Blog #3 - Reverse Engineering CVE-2026-2796](https://red.anthropic.com/2026/exploit/)
 - [Blog #4 - Mythos Preview](https://red.anthropic.com/2026/mythos-preview/)
-
-
+- [Blog #5 - Vulnerability Disclosure Dashboard](https://red.anthropic.com/2026/cvd/) 
+- [Policy #1 - CVD](https://www.anthropic.com/coordinated-vulnerability-disclosure)
+- [Blog #6 - Exploit Evaluations](https://red.anthropic.com/2026/exploit-evals/)
+- [Blog #7 - ExploitBench's Human Observations](https://exploitbench.ai/blog/human-observations/)
+- 
