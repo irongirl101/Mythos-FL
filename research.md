@@ -100,6 +100,18 @@ Capability Tiers:
 ### Exploit Bench 
 ``` are modern LLMs up to competition with me, or in general human researchers, on vulnerability exploitation?```
 
+
+### June 3, 2026 
+From the MITRE ATT&Ck, a risk score was given to each - methodology called AI Risk Enablement Score (ARiES) 
+- ARiES is a composite score built from three signals: the actor’s threat profile, the model’s contribution to the requested harm, and the observed or potential impact. It is calculated based on the actor's activity across Claude.ai, Claude Code, and their API, drawing on their safety classifiers alongside open-source and internal threat-intelligence indicators. The higher the score, the higher-risk the AI enabled actor is.
+- Three dimensional Analysis 
+    - Threat (0–35 points): Evaluates the clarity of the actor’s intent, their technical sophistication, threat intelligence signals, and tactics employed by the account to evade detection. Technical sophistication is graded by Claude on the basis of the actor's prompts and tool usage, measuring expertise required, operator skill, bespoke-versus-commodity tooling, and capability depth.
+    - Vulnerability (0–35 points): Assesses the model’s capacity to enable the requested harm and the risk profile of the interface used. Programmatic interfaces (i.e. API) and agentic coding tools like Claude Code score highest due to their potential to automate actions.
+    - Impact (0–30 points): Captures the real-world effects of the user’s behavior through scores assigned by our safety classifiers and investigators’ assessment of actual or potential consequences attributable to AI’s involvement in the operation.
+Together, these components produce a total risk score from 0 to 100 - then be able to place them into risk tiers. 
+
+
+
 ## URL's referred to 
 - [Blog #1 - AI for CyberSec](https://red.anthropic.com/2025/ai-for-cyber-defenders/)
 - [Blog #2 - Zero Days](https://red.anthropic.com/2026/zero-days/)
@@ -109,4 +121,6 @@ Capability Tiers:
 - [Policy #1 - CVD](https://www.anthropic.com/coordinated-vulnerability-disclosure)
 - [Blog #6 - Exploit Evaluations](https://red.anthropic.com/2026/exploit-evals/)
 - [Blog #7 - ExploitBench's Human Observations](https://exploitbench.ai/blog/human-observations/)
-- [Blog #8 - Attack Navigator](https://red.anthropic.com/2026/attack-navigator/)
+- [Blog #8 - Verizon ATT&Ck](https://red.anthropic.com/2026/attack-navigator/)
+- [Benchmark Test #1](https://exploitbench.ai/run/abaebf553245b90b/)
+- [MITRE](https://attack.mitre.org/versions/v18/)
