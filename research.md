@@ -97,6 +97,9 @@ Capability Tiers:
 
 [Scone Bench](https://github.com/anthropics/scone-bench)
 
+### Exploit Bench 
+``` are modern LLMs up to competition with me, or in general human researchers, on vulnerability exploitation?```
+
 ## URL's referred to 
 - [Blog #1 - AI for CyberSec](https://red.anthropic.com/2025/ai-for-cyber-defenders/)
 - [Blog #2 - Zero Days](https://red.anthropic.com/2026/zero-days/)
@@ -106,4 +109,4 @@ Capability Tiers:
 - [Policy #1 - CVD](https://www.anthropic.com/coordinated-vulnerability-disclosure)
 - [Blog #6 - Exploit Evaluations](https://red.anthropic.com/2026/exploit-evals/)
 - [Blog #7 - ExploitBench's Human Observations](https://exploitbench.ai/blog/human-observations/)
-- 
+- [Blog #8 - Attack Navigator](https://red.anthropic.com/2026/attack-navigator/)
