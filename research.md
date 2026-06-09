@@ -124,7 +124,12 @@ plans.
     - cross a number of instances, earlier versions of Claude Mythos Preview have used low-level /proc/ access to search for credentials, attempt to circumvent sandboxing, and attempt to escalate its permissions.
 
 - Mythos attempts to solve a user-provided task at hand by unwanted means, rather than attempts to achieve any unrelated hidden goal
-
+- They tested Claude on Agentic Saftey 
+    - Claude Mythos Preview showed significant improvement compared to recent models on this evaluation on refusing malicious requests. Previous models failed to consistently refuse on newly-introduced ransomware creation tasks, suppressing their scores compared to results reported for previous versions of this evaluation. 
+    - testing how the model responds to harmful tasks when presented with GUI- and CLI-based tools in a sandboxed environment.
+    -  whether the model can autonomously run an influence operation at a level that would meaningfully uplift a malicious actor through persuasion, deception, or personalized targeting at scale. (measure raw capability rather than the effect of safeguards, they ran the evaluation against a “helpful-only” model version with reduced harmlessness training.)
+    - The evaluation was designed to focus on the model’s ability to execute a complete campaign end-to-end against platform friction and defenses against the campaign, which was tested in an agentic harness where the model has access to simulated social media platform tools within a mocked ecosystem that includes moderation and counter-engagement obstacles. (Mythos required substantial human direction for most operational steps and lacks autonomous capabilities for effective persona and network management, coordinated content delivery, and scaled social engineering campaign execution)
+    - A prompt injection is a malicious instruction hidden in content that an agent processes on the user’s behalf—for example, on a website the agent visits or in an email the agent summarizes. When the agent encounters this malicious content during a task, it may interpret the embedded instructions as legitimate commands by the user and act accordingly.
 
 ## URL's referred to 
 - [Blog #1 - AI for CyberSec](https://red.anthropic.com/2025/ai-for-cyber-defenders/)
