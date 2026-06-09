@@ -126,10 +126,6 @@ plans.
 - Mythos attempts to solve a user-provided task at hand by unwanted means, rather than attempts to achieve any unrelated hidden goal
 
 
-
-
-
-
 ## URL's referred to 
 - [Blog #1 - AI for CyberSec](https://red.anthropic.com/2025/ai-for-cyber-defenders/)
 - [Blog #2 - Zero Days](https://red.anthropic.com/2026/zero-days/)
