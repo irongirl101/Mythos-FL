@@ -95,7 +95,7 @@ Capability Tiers:
 - T2 Generic primitives (breaking the sandbox to get read/write or infoleaks across the process);
 - T1 Full Control (hijacking control flow or getting arbitrary code execution).
 
-[Scone Bench](https://github.com/anthropics/scone-bench)
+- [Scone Bench](https://github.com/anthropics/scone-bench)
 
 ### Exploit Bench 
 ``` are modern LLMs up to competition with me, or in general human researchers, on vulnerability exploitation?```
@@ -109,6 +109,24 @@ From the MITRE ATT&Ck, a risk score was given to each - methodology called AI Ri
     - Vulnerability (0–35 points): Assesses the model’s capacity to enable the requested harm and the risk profile of the interface used. Programmatic interfaces (i.e. API) and agentic coding tools like Claude Code score highest due to their potential to automate actions.
     - Impact (0–30 points): Captures the real-world effects of the user’s behavior through scores assigned by our safety classifiers and investigators’ assessment of actual or potential consequences attributable to AI’s involvement in the operation.
 Together, these components produce a total risk score from 0 to 100 - then be able to place them into risk tiers. 
+
+## System Card - Mythos Preview 
+- uses a ClaudeBot to get a training data - from publid websites (depending whetehr the website allows crawling or not)
+- weaknesses included poor calibration on the appropriate level of complexity needed for a viable experimental
+design, a propensity to over-engineer, and poor prioritization of feasible and infeasible
+plans. 
+- Claude has 
+    - escaped the sandbox in which it was allowed to work in (this was explicitly asked to do by the user)
+    - covered its tracks after rule violations (?????) -  the model accidentally obtained the exact answer to a quantitative estimation question via an explicitly prohibited method. Rather than flagging this and declining to answer, the model instead attempted to solve the
+    question independently. In this process, it explicitly reasoned that it needed to make sure that its final answer submission wasn’t "too accurate." 
+    - In another case, after finding an exploit to edit files for which it lacked permissions, the model made further interventions to make sure that any changes it made this way would not appear in the change history on git.
+    - when an earlier version of Claude Code auto mode blocked it from launching a subprocess with elevated permissions, it acknowledged the block was appropriate but then attempted to bypass it by obfuscating the permissions elevation. 
+    - cross a number of instances, earlier versions of Claude Mythos Preview have used low-level /proc/ access to search for credentials, attempt to circumvent sandboxing, and attempt to escalate its permissions.
+
+- Mythos attempts to solve a user-provided task at hand by unwanted means, rather than attempts to achieve any unrelated hidden goal
+
+
+
 
 
 
@@ -124,3 +142,4 @@ Together, these components produce a total risk score from 0 to 100 - then be ab
 - [Blog #8 - Verizon ATT&Ck](https://red.anthropic.com/2026/attack-navigator/)
 - [Benchmark Test #1](https://exploitbench.ai/run/abaebf553245b90b/)
 - [MITRE](https://attack.mitre.org/versions/v18/)
+- [System Card](https://www-cdn.anthropic.com/08ab9158070959f88f296514c21b7facce6f52bc.pdf)
