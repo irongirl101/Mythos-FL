@@ -145,3 +145,7 @@ plans.
 - [MITRE](https://attack.mitre.org/versions/v18/)
 - [System Card](https://www-cdn.anthropic.com/08ab9158070959f88f296514c21b7facce6f52bc.pdf)
 - [Research Paper - AI Agents' Cybersecurity Benchmarks](https://arxiv.org/pdf/2506.02548)
+
+
+
+- [MY EXCALIDRAW FOR PROBABLE PROJECT] (https://excalidraw.com/#json=nOvNhxJHugM9HxaTojPL-,Ymf6BZEXU7-kYygYj3cI5g)
